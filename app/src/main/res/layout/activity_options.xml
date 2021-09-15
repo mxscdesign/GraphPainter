@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".OptionsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Оси"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Размер:"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x от "
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_xMin"
+            android:layout_width="60dp"
+            android:text="-5"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="до"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_xMax"
+            android:layout_width="60dp"
+            android:text="5"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="y от "
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_yMin"
+            android:layout_width="60dp"
+            android:text="-5"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="до"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_yMax"
+            android:layout_width="60dp"
+            android:text="5"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цвет осей:"
+        android:textSize="17sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_axis_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_axis_black"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_axis_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Черный" />
+
+        <RadioButton
+            android:id="@+id/rb_axis_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Красный" />
+
+        <RadioButton
+            android:id="@+id/rb_axis_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Синий" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="График"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цвет графика:"
+        android:textSize="17sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_graph_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_graph_black"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_graph_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Черный" />
+
+        <RadioButton
+            android:id="@+id/rb_graph_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Красный" />
+
+        <RadioButton
+            android:id="@+id/rb_graph_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Синий" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Толщина графика:"
+        android:textSize="17sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_graph_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_graph_thin"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_graph_thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тонкий" />
+
+        <RadioButton
+            android:id="@+id/rb_graph_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Средний" />
+
+        <RadioButton
+            android:id="@+id/rb_graph_wide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Толстый" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="График:"
+        android:textSize="17sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_graph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_graph1"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_graph1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="График 1" />
+
+        <RadioButton
+            android:id="@+id/rb_graph2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="График 2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_build"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Построить" />
+
+</LinearLayout>
